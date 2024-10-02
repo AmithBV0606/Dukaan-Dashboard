@@ -90,7 +90,7 @@ function OrderInfo() {
       {/* Search Section */}
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2 p-2 bg-white w-80 rounded-lg ml-2">
-          <img src="../src/assets/search.svg" alt="" />
+          <img src="src/assets/search.svg" alt="" />
           <input
             type="search"
             name=""
@@ -103,11 +103,11 @@ function OrderInfo() {
         <div className="hidden sm:flex gap-2">
           <button className="bg-white flex items-center gap-2 p-2 rounded-lg">
             <p className="text-lg">Sort</p>
-            <img src="../src/assets/sort.svg" alt="" className="w-4" />
+            <img src="src/assets/sort.svg" alt="" className="w-4" />
           </button>
 
           <button className="bg-white p-2 rounded-lg mr-2">
-            <img src="../src/assets/download.svg" alt="" className="w-6" />
+            <img src="src/assets/download.svg" alt="" className="w-6" />
           </button>
         </div>
       </div>

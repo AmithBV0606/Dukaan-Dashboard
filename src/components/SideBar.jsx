@@ -22,7 +22,7 @@ function SideBar() {
         {/* Logo */}
         <div className="flex justify-between items-center p-4">
           <img
-            src="../src/assets/Logo.jpg"
+            src="src/assets/Logo.jpg"
             alt=""
             className="w-10 h-10 rounded-lg"
           />
@@ -32,14 +32,14 @@ function SideBar() {
             <p className="cursor-pointer underline text-xs">Visit Store</p>
           </div>
 
-          <img src="../src/assets/DownArrowWhite.svg" alt="" className="w-4 hidden xl:block" />
+          <img src="src/assets/DownArrowWhite.svg" alt="" className="w-4 hidden xl:block" />
         </div>
 
         {/* Navigation */}
         <div>
           {navigationList.map((item, index) => (
             <div className="hidden lg:flex text-white gap-2 p-2 m-2 rounded-xl hover:bg-[#3b4a7b] cursor-pointer" key={index}>
-              <img src={`../src/icons/${item}.svg`} alt="" className="w-6" />
+              <img src={`src/icons/${item}.svg`} alt="" className="w-6" />
               <p className="text-base">{item}</p>
             </div>
           ))}

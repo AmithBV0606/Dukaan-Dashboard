@@ -11,7 +11,7 @@ function OverviewSection() {
       <div>
         <div className='bg-gray-50 border-2 border-gray-200 flex items-center gap-2 rounded-md p-1 cursor-pointer'>
           <h1>This Month</h1>
-          <img src="src/assets/DownArrow.svg" alt="" className='w-4'/>
+          <img src="public/DownArrow.svg" alt="" className='w-4'/>
         </div>
       </div>
 

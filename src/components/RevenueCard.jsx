@@ -13,8 +13,8 @@ function RevenueCard({ title, amount, orderCount, subTitle }) {
         <img
           src={`${
             subTitle
-              ? "src/assets/whiteQuestion.svg"
-              : "src/assets/blackQuestion.svg"
+              ? "public/whiteQuestion.svg"
+              : "public/blackQuestion.svg"
           }`}
           alt=""
           className="w-4"
@@ -37,8 +37,8 @@ function RevenueCard({ title, amount, orderCount, subTitle }) {
             <img
               src={`${
                 subTitle
-                  ? "src/assets/whiteArrow.svg"
-                  : "src/assets/blackArrow.svg"
+                  ? "public/whiteArrow.svg"
+                  : "public/blackArrow.svg"
               }`}
               alt=""
               className="w-5"

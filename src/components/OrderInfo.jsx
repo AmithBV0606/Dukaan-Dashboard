@@ -113,7 +113,7 @@ function OrderInfo() {
       </div>
 
       {/* Table section */}
-      <div className="text-white p-2 overflow-x-auto">
+      {/* <div className="text-white p-2 overflow-x-auto">
         <div className="grid grid-cols-5 sm:gap-20 gap-32 bg-[#146EB4] rounded-lg p-2">
           <p>Order ID</p>
           <p>Status</p>
@@ -131,6 +131,68 @@ function OrderInfo() {
             <p className="hidden sm:block">{order.OrderAmount}</p>
           </div>
         ))}
+      </div> */}
+
+      <div className="overflow-x-auto">
+        <table className="min-w-full mt-4 p-2">
+          <colgroup>
+            <col className="w-1/5" />
+            <col className="w-1/5" />
+            <col className="w-1/5" />
+            <col className="w-1/5" />
+            <col className="w-1/5" />
+          </colgroup>
+
+          <thead className="text-[#4D4D4D]">
+            <tr className="bg-[#F2F2F2]">
+              <th class="px-3 py-[10px] text-left text-sm font-medium tracking-wider rounded-l">
+                Order ID
+              </th>
+
+              <th class="px-3 py-[10px] text-left text-sm font-medium tracking-wider rounded-l">
+                Status
+              </th>
+
+              <th class="px-3 py-[10px] text-left text-sm font-medium tracking-wider rounded-l">
+                Transaction ID
+              </th>
+
+              <th class="px-3 py-[10px] text-left text-sm font-medium tracking-wider rounded-l">
+                Refund Date
+              </th>
+
+              <th class="px-3 py-[10px] text-left text-sm font-medium tracking-wider rounded-l">
+                Order Amount
+              </th>
+            </tr>
+          </thead>
+
+          <tbody className="bg-white divide-[#E6E6E6]">
+            {orders.map((order) => (
+              <tr className="text-sm" key={order.id}>
+                <td class="px-3 py-[10px] whitespace-nowrap text-[#146EB4] font-medium">
+                  {order.OrderID}
+                </td>
+
+                <td class="px-3 py-[10px] whitespace-nowrap text-[#146EB4] font-medium">
+                  {order.Status}
+                </td>
+
+                <td class="px-3 py-[10px] whitespace-nowrap text-[#146EB4] font-medium">
+                  {order.TransactionID}
+                </td>
+
+                <td class="px-3 py-[10px] whitespace-nowrap text-[#146EB4] font-medium">
+                  {order.RefundDate}
+                </td>
+
+                <td class="px-3 py-[10px] whitespace-nowrap text-[#146EB4] font-medium">
+                  {order.OrderAmount}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

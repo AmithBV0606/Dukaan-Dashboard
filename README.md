@@ -1,8 +1,48 @@
-# React + Vite
+# Dukaan-Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Introduction
 
-Currently, two official plugins are available:
+Re-creating the dukaan dashboard to refresh my React and TailwindCss skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## 🛠️ Technologies Used
+
+- **React.js** – Component-based UI development
+
+- **JavaScript** – Core scripting language
+
+- **Tailwind CSS** – Utility-first styling framework
+
+## 🚀 Live Demo
+🔗 [View Dukaan-Dashboard](https://dukaan.amithbv.com/)
+
+## 📦 Setting Up the Project Locally
+
+Clone the repository and navigate into the project :
+
+```bash
+git clone https://github.com/AmithBV0606/Dukaan-Dashboard.git
+cd Dukaan-Dashboard
+```
+
+## Install Dependencies 
+
+Ensure you have Node.js (>=16.0.0) and npm or yarn installed.
+
+```bash
+npm install  # or yarn install
+```
+
+## ▶️ Running the Project
+
+Using Docker (Recommended)
+
+```bash
+docker compose up
+```
+
+Running Locally without Docker
+
+```bash
+npm run dev  # or yarn dev
+```
